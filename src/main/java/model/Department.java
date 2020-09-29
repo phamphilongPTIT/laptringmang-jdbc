@@ -61,4 +61,10 @@ public class Department implements Serializable {
 		this.location = location;
 	}
 
+	@Override
+	public String toString() {
+		String str = "deptId: " + this.deptId + "\n" + "deptName: " + this.deptName + "\n"
+				+ "deptNo: " + this.deptNo + "\n" + "location: " + this.location;
+		return str;
+	}
 }
