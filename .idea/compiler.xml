@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="jdbc" />
         <module name="ltm-ex2" />
+        <module name="laptringmang-jdbc" />
       </profile>
     </annotationProcessing>
   </component>
