@@ -81,7 +81,7 @@ public class DAOTimeKeeper extends IDAO<Timekeeper> {
                 "DATE_TIME,"+
                 "IN_OUT,"+
                 "EMP_ID"+
-                "VALUES (?,?,?,?,?,?,?,?,?)";
+                "VALUES (?,?,?,?)";
         try {
             this.preStatement = this.conn.prepareStatement(sql);
             this.preStatement.setString(1, e.getTimekeeper_Id());

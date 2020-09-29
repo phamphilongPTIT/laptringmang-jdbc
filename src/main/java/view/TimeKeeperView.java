@@ -51,33 +51,21 @@ public class TimeKeeperView {
                 try {
                     BufferedReader scan = new BufferedReader(new InputStreamReader(System.in));
 
-                    Employee insertE = new Employee();
-                    System.out.println("Them moi employee");
+                    Timekeeper insertE = new Timekeeper();
+                    System.out.println("Them moi TimeKeeper");
 
-                    System.out.print("EmpID: ");
-                    insertE.setEmpId(Integer.parseInt(scan.readLine()));
+                    System.out.print("TimekeeperID: ");
+                    insertE.setTimekeeper_Id(scan.readLine());
 
-                    System.out.println("EmpName: ");
-                    insertE.setEmpName(scan.readLine());
-
-                    System.out.println("EmpNo:");
-                    insertE.setEmpNo(scan.readLine());
-
-                    System.out.println("HireDate (dd/mm/yyyy)");
+                    System.out.println("Date-Time (dd/mm/yyyy)");
                     SimpleDateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
-                    insertE.setHireDate(formatter.parse(scan.readLine()));
+                    insertE.setDate_Time(formatter.parse(scan.readLine()));
 
-                    System.out.println("Job");
-                    insertE.setJob(scan.readLine());
+                    System.out.println("In-Out (I/O)?");
+                    insertE.setIn_Out(scan.readLine());
 
-                    System.out.println("Salary");
-                    insertE.setSalary(Float.parseFloat(scan.readLine()));
-
-                    System.out.println("Dept_Id");
-                    insertE.setDeptId(Integer.parseInt(scan.readLine()));
-
-                    System.out.println("Mng_id");
-                    insertE.setMngId(BigInteger.valueOf((Long.parseLong(scan.readLine()))));
+                    System.out.println("EMP_ID");
+                    insertE.setEmpId(BigInteger.valueOf((Long.parseLong(scan.readLine()))));
                     return insertE;
                 } catch (Exception e1) {
                     // TODO Auto-generated catch block
@@ -90,33 +78,21 @@ public class TimeKeeperView {
                 try {
                     BufferedReader scan = new BufferedReader(new InputStreamReader(System.in));
 
-                    Employee insertE = new Employee();
-                    System.out.println("Sua employee");
+                    Timekeeper insertE = new Timekeeper();
+                    System.out.println("Them moi TimeKeeper");
 
-                    System.out.print("EmpID: ");
-                    insertE.setEmpId(Integer.parseInt(scan.readLine()));
+                    System.out.print("TimekeeperID: ");
+                    insertE.setTimekeeper_Id(scan.readLine());
 
-                    System.out.println("EmpName: ");
-                    insertE.setEmpName(scan.readLine());
-
-                    System.out.println("EmpNo:");
-                    insertE.setEmpNo(scan.readLine());
-
-                    System.out.println("HireDate (dd/mm/yyyy)");
+                    System.out.println("Date-Time (dd/mm/yyyy)");
                     SimpleDateFormat formatter = new SimpleDateFormat("dd/mm/yyyy");
-                    insertE.setHireDate(formatter.parse(scan.readLine()));
+                    insertE.setDate_Time(formatter.parse(scan.readLine()));
 
-                    System.out.println("Job");
-                    insertE.setJob(scan.readLine());
+                    System.out.println("In-Out (I/O)?");
+                    insertE.setIn_Out(scan.readLine());
 
-                    System.out.println("Salary");
-                    insertE.setSalary(Float.parseFloat(scan.readLine()));
-
-                    System.out.println("Dept_Id");
-                    insertE.setDeptId(Integer.parseInt(scan.readLine()));
-
-                    System.out.println("Mng_id");
-                    insertE.setMngId(BigInteger.valueOf((Long.parseLong(scan.readLine()))));
+                    System.out.println("EMP_id");
+                    insertE.setEmpId(BigInteger.valueOf((Long.parseLong(scan.readLine()))));
                     return insertE;
                 } catch (Exception e1) {
                     // TODO Auto-generated catch block
