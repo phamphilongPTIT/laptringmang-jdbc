@@ -50,4 +50,12 @@ public class SalaryGrade implements Serializable {
 		this.lowSalary = lowSalary;
 	}
 
+	@Override
+	public String toString() {
+		return "SalaryGrade{" +
+				"grade=" + grade +
+				", highSalary=" + highSalary +
+				", lowSalary=" + lowSalary +
+				'}';
+	}
 }
