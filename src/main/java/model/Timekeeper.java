@@ -62,4 +62,13 @@ public class Timekeeper implements Serializable {
 		this.in_Out = in_Out;
 	}
 
+	@Override
+	public String toString() {
+		return "Timekeeper{" +
+				"timekeeper_Id='" + timekeeper_Id + '\'' +
+				", date_Time=" + date_Time.toString() +
+				", empId=" + empId +
+				", in_Out='" + in_Out + '\'' +
+				'}';
+	}
 }
