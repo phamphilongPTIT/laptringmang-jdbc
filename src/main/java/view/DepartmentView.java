@@ -25,6 +25,7 @@ public class DepartmentView {
         System.out.println("2. Hien thi department theo ten");
         System.out.println("3. Them department");
         System.out.println("4. Sua department");
+        System.out.println("5. Xoa department");
         int choice = 0;
         choice = scan.nextInt();
         return choice;
@@ -91,6 +92,23 @@ public class DepartmentView {
 
                     System.out.println("Location");
                     insertD.setLocation(scan.readLine());
+                    return insertD;
+                } catch (Exception e1) {
+                    // TODO Auto-generated catch block
+                    e1.printStackTrace();
+                    return null;
+
+                }
+            case 5:
+                try {
+                    BufferedReader scan = new BufferedReader(new InputStreamReader(System.in));
+
+                    Department insertD = new Department();
+                    System.out.println("Xoa department");
+
+                    System.out.print("DepartmentID: ");
+                    insertD.setDeptId(Integer.parseInt(scan.readLine()));
+
                     return insertD;
                 } catch (Exception e1) {
                     // TODO Auto-generated catch block

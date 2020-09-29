@@ -59,6 +59,11 @@ public class DepartmentControl {
                     int updateCount = this.dao.update(upD);
                     this.view.showMessage(updateCount+ " row has been inserted");
                     break;
+                case 5:
+                    Department deleteD = this.view.input(5);
+                    int deleteCount = this.dao.delete(deleteD);
+                    this.view.showMessage(deleteCount+ " row has been deleted");
+                    break;
                 default:
                     break;
             }

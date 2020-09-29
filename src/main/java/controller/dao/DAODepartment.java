@@ -115,6 +115,22 @@ public class DAODepartment extends IDAO<Department>{
         }
     }
 
+    public int delete(Department object) {
+        String sql = "DELETE FROM DEPARTMENT WHERE DEPT_ID = ?";
+        try {
+            this.preStatement = this.conn.prepareStatement(sql);
+            this.preStatement.setInt(1, object.getDeptId());
+
+            int rowCount=this.preStatement.executeUpdate();
+
+            return rowCount;
+        } catch (SQLException e1) {
+            e1.printStackTrace();
+            return 0;
+
+        }
+    }
+
     @Override
     public void closeConnection() {
         try {
